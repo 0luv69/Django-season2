@@ -1,0 +1,12 @@
+
+{{ num|floatformat:2 }}
+
+
+
+{% for each_room in all_rooms %}
+
+<p> {{ each_room.title|default:"no Title  found" }}  </p>
+<p> {{ each_room.created_at|upper }}  </p>
+<p> {{ each_room.description|default:"no Dec found" }}  </p>
+
+{% endfor %}
